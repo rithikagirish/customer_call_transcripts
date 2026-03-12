@@ -6,7 +6,7 @@ A powerful, AI-driven enterprise platform that transforms unstructured customer 
 
 While most organizations only track basic metrics like call duration or resolution time, this platform delves deep into the content of customer interactions. It processes raw support transcripts to identify sentiment, categorize issues, discover conversation patterns, and predict risks such as call escalation and customer dissatisfaction.
 
-
+![Workflow Model](images/workflow_model.png)
 
 ## Core Features
 
