@@ -56,40 +56,44 @@ While most organizations only track basic metrics like call duration or resoluti
    ```bash
    git clone [https://github.com/yourusername/conversation-intelligence-platform.git](https://github.com/yourusername/conversation-intelligence-platform.git)
    cd conversation-intelligence-platform```
-   Create and activate a virtual environment:
 
-Bash
+2. Create and activate a virtual environment:
+
+```Bash
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install dependencies:
+source venv/bin/activate  # On Windows use: venv\Scripts\activate```
 
-Bash
-pip install -r requirements.txt
-Environment Variables:
+3. Install dependencies:
+```Bash
+pip install -r requirements.txt```
+
+4. Environment Variables:
 Create a .env file in the root directory and add your configuration details:
 
-Code snippet
+```Code snippet
 DATABASE_URI=your_database_connection_string
 SECRET_KEY=your_secret_key
 AWS_ACCESS_KEY_ID=your_aws_key
-AWS_SECRET_ACCESS_KEY=your_aws_secret
-Run the application:
+AWS_SECRET_ACCESS_KEY=your_aws_secret```
 
-Bash
+5. Run the application:
+
+```Bash
 # For Flask
 flask run
 
 # For FastAPI
-uvicorn app.main:app --reload
-Cloud Deployment Notes
+uvicorn app.main:app --reload```
+
+### Cloud Deployment Notes
 This system is architected to run on cloud infrastructure:
 
-Application Server: Deploy the Flask/FastAPI backend on AWS EC2 or similar compute instances.
+### Application Server: Deploy the Flask/FastAPI backend on AWS EC2 or similar compute instances.
 
-Model Hosting: Trained ML models can be packaged as Docker containers and deployed to Amazon SageMaker endpoints for scalable, real-time inference.
+####Model Hosting: Trained ML models can be packaged as Docker containers and deployed to Amazon SageMaker endpoints for scalable, real-time inference.
 
-Contributing
+###Contributing
 Contributions are welcome. Please fork the repository and submit a Pull Request for any enhancements, bug fixes, or documentation updates.
 
-License
+###License
 This project is licensed under the MIT License - see the LICENSE file for details.
