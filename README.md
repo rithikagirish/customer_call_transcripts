@@ -4,7 +4,9 @@ A powerful, AI-driven enterprise platform that transforms unstructured customer 
 
 ## Project Overview
 
-While most organizations only track basic metrics like call duration or resolution time, this platform delves deep into the content of customer interactions. It processes raw support transcripts to identify sentiment, categorize issues, discover conversation patterns, and predict risks such as call escalation and customer dissatisfaction. 
+While most organizations only track basic metrics like call duration or resolution time, this platform delves deep into the content of customer interactions. It processes raw support transcripts to identify sentiment, categorize issues, discover conversation patterns, and predict risks such as call escalation and customer dissatisfaction.
+
+
 
 ## Core Features
 
@@ -18,20 +20,24 @@ While most organizations only track basic metrics like call duration or resoluti
 
 ## Tech Stack
 
-**Backend & API**
+### Backend & API
+
 * Python 3.x
 * Flask / FastAPI
 
-**Machine Learning & NLP**
+### Machine Learning & NLP
+
 * Scikit-learn (Random Forest, Logistic Regression, Decision Trees)
 * NLTK / spaCy / HuggingFace Transformers
 * Pandas / NumPy
 
-**Frontend & Visualization**
+### Frontend & Visualization
+
 * HTML5, CSS3, JavaScript, Bootstrap
 * Plotly / Matplotlib / Seaborn
 
-**Database & Cloud Deployment**
+### Database & Cloud Deployment
+
 * PostgreSQL / MongoDB
 * AWS (EC2 for application hosting, Amazon SageMaker for model deployment)
 
@@ -46,54 +52,65 @@ While most organizations only track basic metrics like call duration or resoluti
 ## Getting Started
 
 ### Prerequisites
+
 * Python 3.8+
 * PostgreSQL or MongoDB (local or cloud instance)
 * Git
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/conversation-intelligence-platform.git](https://github.com/yourusername/conversation-intelligence-platform.git)
-   cd conversation-intelligence-platform```
+1. **Clone the repository**
 
-2. Create and activate a virtual environment:
+```bash
+git clone https://github.com/yourusername/conversation-intelligence-platform.git
+cd conversation-intelligence-platform
+```
 
-```Bash
+2. **Create and activate a virtual environment**
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate```
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 
-3. Install dependencies:
-```Bash
-pip install -r requirements.txt```
+3. **Install dependencies**
 
-4. Environment Variables:
-Create a .env file in the root directory and add your configuration details:
+```bash
+pip install -r requirements.txt
+```
 
-```Code snippet
+4. **Environment Variables**
+
+Create a `.env` file in the root directory and add your configuration details:
+
+```env
 DATABASE_URI=your_database_connection_string
 SECRET_KEY=your_secret_key
 AWS_ACCESS_KEY_ID=your_aws_key
-AWS_SECRET_ACCESS_KEY=your_aws_secret```
+AWS_SECRET_ACCESS_KEY=your_aws_secret
+```
 
-5. Run the application:
+5. **Run the application**
 
-```Bash
+```bash
 # For Flask
 flask run
 
 # For FastAPI
-uvicorn app.main:app --reload```
+uvicorn app.main:app --reload
+```
 
-### Cloud Deployment Notes
+## Cloud Deployment Notes
+
 This system is architected to run on cloud infrastructure:
 
-### Application Server: Deploy the Flask/FastAPI backend on AWS EC2 or similar compute instances.
+* **Application Server:** Deploy the Flask/FastAPI backend on AWS EC2 or similar compute instances.
+* **Model Hosting:** Trained ML models can be packaged as Docker containers and deployed to Amazon SageMaker endpoints for scalable, real-time inference.
 
-####Model Hosting: Trained ML models can be packaged as Docker containers and deployed to Amazon SageMaker endpoints for scalable, real-time inference.
+## Contributing
 
-###Contributing
 Contributions are welcome. Please fork the repository and submit a Pull Request for any enhancements, bug fixes, or documentation updates.
 
-###License
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
